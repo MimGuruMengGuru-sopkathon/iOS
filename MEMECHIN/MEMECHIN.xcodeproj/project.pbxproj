@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,8 @@
 		54813A1625694FEF00FD7088 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54813A1525694FEF00FD7088 /* SearchVC.swift */; };
 		54813A192569502600FD7088 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54813A182569502600FD7088 /* APIConstants.swift */; };
 		F23CC34DEE1B6E251A39B3C2 /* Pods_MEMECHIN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3306ABC7CD7954250A7E2C4 /* Pods_MEMECHIN.framework */; };
+		F2A2984D256998B50000B457 /* MemeCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A2984C256998B50000B457 /* MemeCVCell.swift */; };
+		F2A2985225699B550000B457 /* MemeCVHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A2985125699B550000B457 /* MemeCVHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		8BAC4D42209FD923A8DA0C06 /* Pods-MEMECHIN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEMECHIN.debug.xcconfig"; path = "Target Support Files/Pods-MEMECHIN/Pods-MEMECHIN.debug.xcconfig"; sourceTree = "<group>"; };
 		BE53AAEC768756D7559D4286 /* Pods-MEMECHIN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEMECHIN.release.xcconfig"; path = "Target Support Files/Pods-MEMECHIN/Pods-MEMECHIN.release.xcconfig"; sourceTree = "<group>"; };
 		C3306ABC7CD7954250A7E2C4 /* Pods_MEMECHIN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MEMECHIN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2A2984C256998B50000B457 /* MemeCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeCVCell.swift; sourceTree = "<group>"; };
+		F2A2985125699B550000B457 /* MemeCVHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeCVHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,7 @@
 		548139EE25694A2900FD7088 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				F2A2984F256998C20000B457 /* Cells */,
 				548139F025694A4100FD7088 /* ViewControllers */,
 				548139EF25694A3800FD7088 /* Storyboards */,
 			);
@@ -221,8 +226,16 @@
 				8BAC4D42209FD923A8DA0C06 /* Pods-MEMECHIN.debug.xcconfig */,
 				BE53AAEC768756D7559D4286 /* Pods-MEMECHIN.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F2A2984F256998C20000B457 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F2A2984C256998B50000B457 /* MemeCVCell.swift */,
+				F2A2985125699B550000B457 /* MemeCVHeader.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,6 +355,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2A2984D256998B50000B457 /* MemeCVCell.swift in Sources */,
+				F2A2985225699B550000B457 /* MemeCVHeader.swift in Sources */,
 				54813A1625694FEF00FD7088 /* SearchVC.swift in Sources */,
 				54813A192569502600FD7088 /* APIConstants.swift in Sources */,
 				548139D6256948BC00FD7088 /* AppDelegate.swift in Sources */,

@@ -1,7 +1,88 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="McU-xb-GY3">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--DetailVC-->
+        <scene sceneID="6jx-ma-Dud">
+            <objects>
+                <viewController id="McU-xb-GY3" customClass="DetailVC" customModule="MEMECHIN" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dwR-Cv-MJX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="XLx-l0-GXX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7ut-hS-yfg">
+                                    <size key="itemSize" width="168" height="217"/>
+                                    <size key="headerReferenceSize" width="50" height="428"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MemeCVCell" id="k51-rS-AaB" customClass="MemeCVCell" customModule="MEMECHIN" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="428" width="165" height="165"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="CBd-Lj-gLd">
+                                            <rect key="frame" x="0.0" y="0.0" width="165" height="165"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scribble" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ENM-lm-Jj6">
+                                                    <rect key="frame" x="0.0" y="0.3333333333333286" width="165" height="163.66666666666666"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="165" id="p7g-1O-sSJ"/>
+                                                        <constraint firstAttribute="height" constant="165" id="zdJ-uz-Gpc"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ENM-lm-Jj6" firstAttribute="leading" secondItem="CBd-Lj-gLd" secondAttribute="leading" id="AtE-YC-Fd0"/>
+                                                <constraint firstItem="ENM-lm-Jj6" firstAttribute="top" secondItem="CBd-Lj-gLd" secondAttribute="top" id="Iya-bb-XRn"/>
+                                                <constraint firstAttribute="trailing" secondItem="ENM-lm-Jj6" secondAttribute="trailing" id="Pyg-gq-Wfn"/>
+                                                <constraint firstAttribute="bottom" secondItem="ENM-lm-Jj6" secondAttribute="bottom" id="vtv-hB-4MT"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="165" height="165"/>
+                                        <connections>
+                                            <outlet property="MemeImageView" destination="ENM-lm-Jj6" id="dAe-Al-JCR"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MemeCVHeader" id="Z3n-GD-VK5" customClass="MemeCVHeader" customModule="MEMECHIN" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="428"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </collectionReusableView>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kPB-rL-lQU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XLx-l0-GXX" firstAttribute="top" secondItem="dwR-Cv-MJX" secondAttribute="top" id="4gp-Oh-6Nf"/>
+                            <constraint firstItem="XLx-l0-GXX" firstAttribute="leading" secondItem="kPB-rL-lQU" secondAttribute="leading" id="MsQ-Ft-vQI"/>
+                            <constraint firstItem="kPB-rL-lQU" firstAttribute="bottom" secondItem="XLx-l0-GXX" secondAttribute="bottom" id="U2O-Ok-KzV"/>
+                            <constraint firstItem="kPB-rL-lQU" firstAttribute="trailing" secondItem="XLx-l0-GXX" secondAttribute="trailing" id="wz5-6e-UBM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="MemeCollectionView" destination="XLx-l0-GXX" id="K0Q-XU-zuK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0uY-M0-xUE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-364" y="51.724137931034484"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="scribble" catalog="system" width="128" height="118"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
