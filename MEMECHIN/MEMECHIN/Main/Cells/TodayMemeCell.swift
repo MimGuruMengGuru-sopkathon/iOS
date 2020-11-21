@@ -10,8 +10,8 @@ import UIKit
 class TodayMemeCell: UICollectionViewCell {
     static let identifier = "TodayMemeCell"
 
-    @IBOutlet weak var todayView: UIView!
     @IBOutlet weak var todayImageView: UIImageView!
+    @IBOutlet weak var todayWholeView: UIView!
     
     
     var todayCornerRadius: CGFloat {
@@ -32,21 +32,10 @@ class TodayMemeCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+//        todayWholeView.layer.maskedCorners = 
         // Initialization code
     }
 
-}
-
-class RoundView: UIView {
-    @IBInspectable var cornerRadius: CGFloat {
-        set(newValue) {
-            self.layer.cornerRadius = newValue
-            self.layer.masksToBounds = true
-            self.layer.maskedCorners = [.layerMaxXMinYCorner]
-        } get { return self.layer.cornerRadius }
-        
-    }
-    
 }
 
 

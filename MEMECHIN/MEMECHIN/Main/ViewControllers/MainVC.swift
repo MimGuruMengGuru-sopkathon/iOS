@@ -13,6 +13,7 @@ class MainVC: UIViewController {
     @IBOutlet weak var basicTopCollectionView: UICollectionView!
     @IBOutlet weak var basicBotCollectionView: UICollectionView!
     @IBOutlet weak var todayPageControl: UIPageControl!
+    @IBOutlet weak var mainSearchBar: UISearchBar!
     
     
     var today : [Today] = []
@@ -21,7 +22,8 @@ class MainVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        mainSearchBar.placeholder = "# 밈 키워드를 입력해보세요"
         setToday()
         todayCollectionView.register(TodayMemeCell.nib(), forCellWithReuseIdentifier: TodayMemeCell.identifier)
         todayCollectionView.delegate = self
@@ -100,6 +102,7 @@ extension MainVC: UICollectionViewDataSource {
                 return UICollectionViewCell()
             }
             
+            cell.setTodayData(todayImageName: today[indexPath.row].todayImageName)
 //            cell.setTodayData(todayImageName: today[indexPath.row])
             return cell
         }else if collectionView == self.basicTopCollectionView {
@@ -107,14 +110,14 @@ extension MainVC: UICollectionViewDataSource {
                 return UICollectionViewCell()
             }
             
-//            cell.setBTopData(basicTopImageName: basictop[indexPath.item], basicTopCategory: <#T##String#>)
+            cell.setBTopData(basicTopImageName: basictop[indexPath.item].basicTopImageName, basicTopCategory: basictop[indexPath.item].basicTopCategory)
             return cell
         }else if collectionView == self.basicBotCollectionView {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: BasicBotCell.identifier, for: indexPath) as? BasicBotCell else {
                 return UICollectionViewCell()
             }
             
-//            cell.setImage(imageName: productImageList[indexPath.item])
+            cell.setBBopData(basicBotImageName: basicbot[indexPath.row].basicBotImageName, basicBotCategory: basicbot[indexPath.row].basicBotCategory)
             return cell
         }else{
             return UICollectionViewCell()
@@ -131,7 +134,7 @@ extension MainVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
             {
                 if collectionView == self.todayCollectionView{
-                    return CGSize(width: (collectionView.frame.width)*0.79, height: (collectionView.frame.height)*0.84)
+                    return CGSize(width: 223, height: 218)
                 }else if collectionView == self.basicTopCollectionView{
                     return CGSize(width: 140, height: 140)
                 }else if collectionView == self.basicBotCollectionView{

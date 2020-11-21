@@ -43,7 +43,7 @@
             <size key="customSize" width="151" height="174"/>
             <connections>
                 <outlet property="todayImageView" destination="Rpk-gG-LQD" id="hWb-gY-M4m"/>
-                <outlet property="todayView" destination="P2e-MR-w4U" id="cEm-Om-WI7"/>
+                <outlet property="todayWholeView" destination="yG8-vT-yKG" id="b9Z-Wr-bE5"/>
             </connections>
             <point key="canvasLocation" x="179" y="81"/>
         </collectionViewCell>

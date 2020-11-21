@@ -13,7 +13,7 @@ class BasicBotCell: UICollectionViewCell {
     @IBOutlet weak var basicBotImageView: UIImageView!
     @IBOutlet weak var basicBotHashTagLabel: UILabel!
     
-    func setBTopData(basicBotImageName: String, basicBotCategory: String){
+    func setBBopData(basicBotImageName: String, basicBotCategory: String){
         self.basicBotImageView.image = UIImage(named: basicBotImageName)
         self.basicBotHashTagLabel.text = basicBotCategory
     }

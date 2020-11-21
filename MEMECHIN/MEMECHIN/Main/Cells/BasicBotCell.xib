@@ -20,10 +20,10 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="el9-sd-7U4">
                         <rect key="frame" x="0.0" y="0.0" width="167" height="179"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TYS-pf-V0b">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TYS-pf-V0b">
                                 <rect key="frame" x="0.0" y="0.0" width="167" height="179"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qq0-gy-jgU">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grdeint" translatesAutoresizingMaskIntoConstraints="NO" id="Qq0-gy-jgU">
                                 <rect key="frame" x="0.0" y="0.0" width="167" height="179"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -50,11 +50,6 @@
                             <constraint firstItem="MVr-QL-8uT" firstAttribute="leading" secondItem="el9-sd-7U4" secondAttribute="leading" constant="13" id="xf1-Ey-ilj"/>
                             <constraint firstAttribute="bottom" secondItem="MVr-QL-8uT" secondAttribute="bottom" constant="9" id="zwd-bp-YAi"/>
                         </constraints>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                <integer key="value" value="12"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
             </view>
@@ -66,6 +61,11 @@
                 <constraint firstAttribute="bottom" secondItem="el9-sd-7U4" secondAttribute="bottom" id="pKI-Ii-MGu"/>
             </constraints>
             <size key="customSize" width="167" height="179"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="12"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="basicBotHashTagLabel" destination="MVr-QL-8uT" id="meP-xd-2Vp"/>
                 <outlet property="basicBotImageView" destination="TYS-pf-V0b" id="bdB-9h-H9L"/>
@@ -74,6 +74,7 @@
         </collectionViewCell>
     </objects>
     <resources>
+        <image name="grdeint" width="140" height="140"/>
         <image name="heart.fill" catalog="system" width="128" height="109"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
