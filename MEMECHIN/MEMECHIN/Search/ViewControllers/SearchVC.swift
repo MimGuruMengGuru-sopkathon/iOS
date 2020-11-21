@@ -10,6 +10,7 @@ import UIKit
 class SearchVC: UIViewController {
     
     @IBOutlet weak var searchCollectionView: UICollectionView!
+    @IBOutlet weak var searchTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +19,11 @@ class SearchVC: UIViewController {
         
     }
     
+    func setPlaceHolder() {
+        searchTextField.placeholder = "# 밈 키워드를 검색해보세요e"
+        searchTextField.borderStyle = .roundedRect
+        searchTextField.layer.cornerRadius = 3.5
+    }
 }
 
 extension SearchVC: UICollectionViewDataSource{

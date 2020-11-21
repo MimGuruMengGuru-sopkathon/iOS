@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		06F46E7A256999360034842C /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F46E79256999360034842C /* SearchCell.swift */; };
+		06F46E822569AED40034842C /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F46E812569AED40034842C /* Search.swift */; };
+		06F46E852569B1B60034842C /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F46E842569B1B60034842C /* NetworkResult.swift */; };
 		548139D6256948BC00FD7088 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548139D5256948BC00FD7088 /* AppDelegate.swift */; };
 		548139D8256948BC00FD7088 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548139D7256948BC00FD7088 /* SceneDelegate.swift */; };
 		548139DF256948BE00FD7088 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 548139DE256948BE00FD7088 /* Assets.xcassets */; };
@@ -26,6 +28,8 @@
 
 /* Begin PBXFileReference section */
 		06F46E79256999360034842C /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		06F46E812569AED40034842C /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		06F46E842569B1B60034842C /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		548139D2256948BC00FD7088 /* MEMECHIN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MEMECHIN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		548139D5256948BC00FD7088 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		548139D7256948BC00FD7088 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				54813A182569502600FD7088 /* APIConstants.swift */,
+				06F46E812569AED40034842C /* Search.swift */,
+				06F46E842569B1B60034842C /* NetworkResult.swift */,
 			);
 			path = "Service File";
 			sourceTree = "<group>";
@@ -352,6 +358,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06F46E822569AED40034842C /* Search.swift in Sources */,
+				06F46E852569B1B60034842C /* NetworkResult.swift in Sources */,
 				54813A1625694FEF00FD7088 /* SearchVC.swift in Sources */,
 				06F46E7A256999360034842C /* SearchCell.swift in Sources */,
 				54813A192569502600FD7088 /* APIConstants.swift in Sources */,

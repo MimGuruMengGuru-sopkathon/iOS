@@ -161,6 +161,7 @@
                     </view>
                     <connections>
                         <outlet property="searchCollectionView" destination="Gdv-as-AZL" id="ooB-b7-eOf"/>
+                        <outlet property="searchTextField" destination="bGd-TS-mJY" id="H7Z-aQ-cXR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zee-2l-u1G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
