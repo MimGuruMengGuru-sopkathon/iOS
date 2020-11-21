@@ -9,5 +9,4 @@ import Foundation
 
 struct BasicBot {
     let basicBotImageName: String
-    let basicBotCategory: String
 }

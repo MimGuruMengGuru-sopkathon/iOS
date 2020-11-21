@@ -20,7 +20,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="el9-sd-7U4">
                         <rect key="frame" x="0.0" y="0.0" width="167" height="179"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TYS-pf-V0b">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TYS-pf-V0b">
                                 <rect key="frame" x="0.0" y="0.0" width="167" height="179"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qq0-gy-jgU">
@@ -28,16 +28,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQy-Nc-oxo">
-                                <rect key="frame" x="134.5" y="12.5" width="21" height="22"/>
+                                <rect key="frame" x="138.5" y="12.5" width="17" height="22"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="heart.fill" catalog="system"/>
+                                <state key="normal" image="vector"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MVr-QL-8uT">
-                                <rect key="frame" x="13" y="149" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
@@ -47,8 +41,6 @@
                             <constraint firstItem="TYS-pf-V0b" firstAttribute="top" secondItem="el9-sd-7U4" secondAttribute="top" id="bba-Kw-nJq"/>
                             <constraint firstAttribute="trailing" secondItem="TYS-pf-V0b" secondAttribute="trailing" id="ie1-Lk-xDk"/>
                             <constraint firstItem="tQy-Nc-oxo" firstAttribute="top" secondItem="el9-sd-7U4" secondAttribute="top" constant="12.4" id="tav-Wk-Dje"/>
-                            <constraint firstItem="MVr-QL-8uT" firstAttribute="leading" secondItem="el9-sd-7U4" secondAttribute="leading" constant="13" id="xf1-Ey-ilj"/>
-                            <constraint firstAttribute="bottom" secondItem="MVr-QL-8uT" secondAttribute="bottom" constant="9" id="zwd-bp-YAi"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -67,14 +59,13 @@
             </constraints>
             <size key="customSize" width="167" height="179"/>
             <connections>
-                <outlet property="basicBotHashTagLabel" destination="MVr-QL-8uT" id="meP-xd-2Vp"/>
                 <outlet property="basicBotImageView" destination="TYS-pf-V0b" id="bdB-9h-H9L"/>
             </connections>
             <point key="canvasLocation" x="-45.652173913043484" y="104.12946428571428"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="heart.fill" catalog="system" width="128" height="109"/>
+        <image name="vector" width="17" height="16"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

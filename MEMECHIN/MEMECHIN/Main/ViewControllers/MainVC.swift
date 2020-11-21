@@ -12,7 +12,7 @@ class MainVC: UIViewController {
     @IBOutlet weak var todayCollectionView: UICollectionView!
     @IBOutlet weak var basicTopCollectionView: UICollectionView!
     @IBOutlet weak var basicBotCollectionView: UICollectionView!
-    @IBOutlet weak var todayPageControl: UIPageControl!
+    @IBOutlet weak var searchBtn: UIButton!
     
     
     var today : [Today] = []
@@ -38,41 +38,43 @@ class MainVC: UIViewController {
         basicBotCollectionView.dataSource = self
     }
     
+    @IBAction func touchUpSearch(_ sender: Any) {
+        
+        let board = UIStoryboard(name: "Search", bundle: nil)
+        
+        guard let dvc = board.instantiateViewController(withIdentifier: "SearchVC") as? SearchVC else {
+            return
+        }
+        
+        self.present(dvc, animated: true)
+    }
     //MARK: - Data Setting
     func setToday() {
         today.append(contentsOf: [
-            Today(todayImageName: "homeCard"),
-            Today(todayImageName: "homeCard"),
-            Today(todayImageName: "homeCard"),
-            Today(todayImageName: "homeCard"),
-            Today(todayImageName: "homeCard"),
+            Today(todayImageName: "box1"),
+            Today(todayImageName: "box2"),
+            Today(todayImageName: "box3"),
+            Today(todayImageName: "box4"),
         ])
     }
     
     func setBT() {
         basictop.append(contentsOf: [
-            BasicTop(basicTopImageName: "homeCard", basicTopCategory: "Category"),
-            BasicTop(basicTopImageName: "homeCard", basicTopCategory: "Category"),
-            BasicTop(basicTopImageName: "homeCard", basicTopCategory: "Category"),
-            BasicTop(basicTopImageName: "homeCard", basicTopCategory: "Category"),
-            BasicTop(basicTopImageName: "homeCard", basicTopCategory: "Category"),
-            BasicTop(basicTopImageName: "homeCard", basicTopCategory: "Category"),
-            BasicTop(basicTopImageName: "homeCard", basicTopCategory: "Category"),
-            BasicTop(basicTopImageName: "homeCard", basicTopCategory: "Category"),
+            BasicTop(basicTopImageName: "result6", basicTopCategory: "# 회사짤"),
+            BasicTop(basicTopImageName: "result2", basicTopCategory: "# 시험짤"),
+            BasicTop(basicTopImageName: "result3", basicTopCategory: "# 회사짤"),
+            BasicTop(basicTopImageName: "result4", basicTopCategory: "# 회사짤"),
             
         ])
     }
         
     func setBB() {
             basicbot.append(contentsOf: [
-                BasicBot(basicBotImageName: "homeCard", basicBotCategory: "Category"),
-                BasicBot(basicBotImageName: "homeCard", basicBotCategory: "Category"),
-                BasicBot(basicBotImageName: "homeCard", basicBotCategory: "Category"),
-                BasicBot(basicBotImageName: "homeCard", basicBotCategory: "Category"),
-                BasicBot(basicBotImageName: "homeCard", basicBotCategory: "Category"),
-                BasicBot(basicBotImageName: "homeCard", basicBotCategory: "Category"),
-                BasicBot(basicBotImageName: "homeCard", basicBotCategory: "Category"),
-                BasicBot(basicBotImageName: "homeCard", basicBotCategory: "Category"),
+                BasicBot(basicBotImageName: "result5"),
+                BasicBot(basicBotImageName: "result1"),
+                BasicBot(basicBotImageName: "result7"),
+                BasicBot(basicBotImageName: "result8"),
+                BasicBot(basicBotImageName: "picture"),
                 
             ])
     }
@@ -86,11 +88,11 @@ extension MainVC: UICollectionViewDelegate {
 extension MainVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == self.todayCollectionView {
-            return 5
+            return today.count
         }else if collectionView == self.basicTopCollectionView {
-            return 8
+            return basictop.count
         }else if collectionView == self.basicBotCollectionView {
-            return 8
+            return basicbot.count
         }else { return 0}
     }
     
@@ -100,21 +102,21 @@ extension MainVC: UICollectionViewDataSource {
                 return UICollectionViewCell()
             }
             
-//            cell.setTodayData(todayImageName: today[indexPath.row])
+            cell.setTodayData(todayImageName: today[indexPath.row].todayImageName)
             return cell
         }else if collectionView == self.basicTopCollectionView {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: BasicTopCell.identifier, for: indexPath) as? BasicTopCell else {
                 return UICollectionViewCell()
             }
             
-//            cell.setBTopData(basicTopImageName: basictop[indexPath.item], basicTopCategory: <#T##String#>)
+            cell.setBTopData(basicTopImageName: basictop[indexPath.row].basicTopImageName, basicTopCategory: basictop[indexPath.row].basicTopCategory)
             return cell
         }else if collectionView == self.basicBotCollectionView {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: BasicBotCell.identifier, for: indexPath) as? BasicBotCell else {
                 return UICollectionViewCell()
             }
             
-//            cell.setImage(imageName: productImageList[indexPath.item])
+            cell.setBBotData(basicBotImageName: basicbot[indexPath.row].basicBotImageName, basicBotCategory: "")
             return cell
         }else{
             return UICollectionViewCell()
@@ -131,7 +133,7 @@ extension MainVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
             {
                 if collectionView == self.todayCollectionView{
-                    return CGSize(width: (collectionView.frame.width)*0.79, height: (collectionView.frame.height)*0.84)
+                    return CGSize(width: 223, height: 218)
                 }else if collectionView == self.basicTopCollectionView{
                     return CGSize(width: 140, height: 140)
                 }else if collectionView == self.basicBotCollectionView{
@@ -160,7 +162,7 @@ extension MainVC: UICollectionViewDelegateFlowLayout {
         {
                 
                 if collectionView == self.todayCollectionView{
-                    return UIEdgeInsets(top: 15, left: 16, bottom: 57, right: 0)
+                    return UIEdgeInsets(top: (collectionView.frame.height-218)/2, left: 16, bottom: (collectionView.frame.height-218)/2, right: 0)
                 }else if collectionView == self.basicTopCollectionView{
                     return UIEdgeInsets(top: 20, left: 16, bottom: 20, right: 0)
                 }else if collectionView == self.basicBotCollectionView{
