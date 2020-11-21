@@ -88,6 +88,9 @@
                                             <rect key="frame" x="15" y="52" width="11" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" image="icBack"/>
+                                            <connections>
+                                                <action selector="backBtnTouched:" destination="McU-xb-GY3" eventType="touchUpInside" id="eVK-in-xC5"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YsE-xF-b9V">
                                             <rect key="frame" x="308" y="51" width="26" height="26"/>

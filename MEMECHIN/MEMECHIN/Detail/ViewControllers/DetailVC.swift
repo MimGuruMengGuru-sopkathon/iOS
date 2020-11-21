@@ -25,6 +25,10 @@ class DetailVC: UIViewController {
         
     }
     
+    @IBAction func backBtnTouched(_ sender: Any) {
+        
+        self.dismiss(animated: true, completion: nil)
+    }
 }
 
 extension DetailVC: UICollectionViewDelegateFlowLayout{
