@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06BE10E12569C71D003844F2 /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE10E02569C71D003844F2 /* SearchService.swift */; };
 		06F46E7A256999360034842C /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F46E79256999360034842C /* SearchCell.swift */; };
 		06F46E822569AED40034842C /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F46E812569AED40034842C /* Search.swift */; };
 		06F46E852569B1B60034842C /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F46E842569B1B60034842C /* NetworkResult.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06BE10E02569C71D003844F2 /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
 		06F46E79256999360034842C /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		06F46E812569AED40034842C /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		06F46E842569B1B60034842C /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				F2A2986F2569C4D30000B457 /* DetailService.swift */,
 				06F46E812569AED40034842C /* Search.swift */,
 				06F46E842569B1B60034842C /* NetworkResult.swift */,
+				06BE10E02569C71D003844F2 /* SearchService.swift */,
 				F2A298732569C9EF0000B457 /* Models.swift */,
 			);
 			path = "Service File";
@@ -443,6 +446,7 @@
 				54813A1325694FE100FD7088 /* MainVC.swift in Sources */,
 				54813A3A2569A31800FD7088 /* BasicBotCell.swift in Sources */,
 				54813A0525694FAF00FD7088 /* DetailVC.swift in Sources */,
+				06BE10E12569C71D003844F2 /* SearchService.swift in Sources */,
 				548139D8256948BC00FD7088 /* SceneDelegate.swift in Sources */,
 				54813A0125694F9A00FD7088 /* IntroVC.swift in Sources */,
 			);
