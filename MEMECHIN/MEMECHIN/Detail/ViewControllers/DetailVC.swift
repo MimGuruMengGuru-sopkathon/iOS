@@ -9,7 +9,8 @@ import UIKit
 
 class DetailVC: UIViewController {
     
-    
+    var memeImage: [String] = ["box1","box2","result3","result4"]
+   
     @IBOutlet weak var MemeCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +20,10 @@ class DetailVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func likeBtnTouched(_ sender: Any) {
+        
+        
+    }
     
 }
 
@@ -49,14 +54,14 @@ extension DetailVC: UICollectionViewDelegateFlowLayout{
 
 extension DetailVC: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 8
+        return memeImage.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MemeCVCell.identifier, for: indexPath) as? MemeCVCell else {
             return UICollectionViewCell()
         }
-        cell.setImage(imageName:"scribble" )
+        cell.setImage(imageName: memeImage[indexPath.row])
         return cell
     }
     
