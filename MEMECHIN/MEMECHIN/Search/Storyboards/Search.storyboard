@@ -32,7 +32,7 @@
                                             <constraint firstAttribute="width" secondItem="JXm-Vs-Geh" secondAttribute="height" multiplier="26:26" id="OGq-mP-6Gi"/>
                                         </constraints>
                                     </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" allowsEditingTextAttributes="YES" borderStyle="roundedRect" placeholder="# 밈 키워드를 검색해보세요" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bGd-TS-mJY">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="# 밈 키워드를 검색해보세요" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bGd-TS-mJY">
                                         <rect key="frame" x="16" y="94" width="343" height="39"/>
                                         <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <constraints>

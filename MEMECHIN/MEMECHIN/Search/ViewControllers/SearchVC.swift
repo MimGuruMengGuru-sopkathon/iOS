@@ -16,7 +16,7 @@ class SearchVC: UIViewController {
         super.viewDidLoad()
         searchCollectionView.dataSource = self
         searchCollectionView.delegate = self
-        
+        setPlaceHolder()
     }
     
     func setPlaceHolder() {
