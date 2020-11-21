@@ -9,6 +9,8 @@ import UIKit
 
 class SearchVC: UIViewController {
     
+    var SearchModel: Search?
+    
     @IBOutlet weak var searchCollectionView: UICollectionView!
     @IBOutlet weak var searchTextField: UITextField!
     
@@ -17,6 +19,7 @@ class SearchVC: UIViewController {
         searchCollectionView.dataSource = self
         searchCollectionView.delegate = self
         setPlaceHolder()
+        getSearch()
     }
     
     func setPlaceHolder() {
@@ -29,7 +32,7 @@ class SearchVC: UIViewController {
 extension SearchVC: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
-        return 8
+        return SearchModel?.data.count ?? 5
     }
     
     func collectionView(_ collectionView: UICollectionView,
@@ -68,5 +71,35 @@ extension SearchVC: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout:
                             UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 0, left: 0, bottom: 24, right: 0)
+    }
+}
+
+extension SearchVC {
+    func getSearch(){
+        SearchService.shared.searchloading() {
+            [weak self]
+            data in
+            guard let `self` = self else {return}
+            switch data {
+                
+            case .success(let res):
+                let response = res as! Search
+                self.SearchModel = response
+                self.searchCollectionView.reloadData()
+                self.searchCollectionView.dataSource = self
+                self.searchCollectionView.delegate = self
+                
+                
+            case .requestErr:
+                print(".requestErr")
+            case .pathErr:
+                print(".pathErr")
+            case .serverErr:
+                print(".serverErr")
+            case .networkFail:
+                print(".networkFail")
+            }
+            
+        }
     }
 }
