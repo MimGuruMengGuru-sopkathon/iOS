@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06F46E7A256999360034842C /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F46E79256999360034842C /* SearchCell.swift */; };
 		548139D6256948BC00FD7088 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548139D5256948BC00FD7088 /* AppDelegate.swift */; };
 		548139D8256948BC00FD7088 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548139D7256948BC00FD7088 /* SceneDelegate.swift */; };
 		548139DF256948BE00FD7088 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 548139DE256948BE00FD7088 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06F46E79256999360034842C /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		548139D2256948BC00FD7088 /* MEMECHIN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MEMECHIN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		548139D5256948BC00FD7088 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		548139D7256948BC00FD7088 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +58,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06F46E78256998B60034842C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				06F46E79256999360034842C /* SearchCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		548139C9256948BC00FD7088 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +129,7 @@
 		548139ED256949FC00FD7088 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				06F46E78256998B60034842C /* Cells */,
 				548139F425694A9900FD7088 /* Storyboards */,
 				548139F325694A9100FD7088 /* ViewControllers */,
 			);
@@ -221,7 +232,6 @@
 				8BAC4D42209FD923A8DA0C06 /* Pods-MEMECHIN.debug.xcconfig */,
 				BE53AAEC768756D7559D4286 /* Pods-MEMECHIN.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -343,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54813A1625694FEF00FD7088 /* SearchVC.swift in Sources */,
+				06F46E7A256999360034842C /* SearchCell.swift in Sources */,
 				54813A192569502600FD7088 /* APIConstants.swift in Sources */,
 				548139D6256948BC00FD7088 /* AppDelegate.swift in Sources */,
 				54813A1325694FE100FD7088 /* MainVC.swift in Sources */,
