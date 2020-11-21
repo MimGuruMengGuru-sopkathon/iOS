@@ -9,4 +9,5 @@ import UIKit
 
 class MemeCVHeader: UICollectionReusableView {
         
+    @IBOutlet weak var likeBtn: UIButton!
 }

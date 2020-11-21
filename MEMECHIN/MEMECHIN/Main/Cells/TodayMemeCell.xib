@@ -20,7 +20,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P2e-MR-w4U">
                         <rect key="frame" x="0.0" y="0.0" width="151" height="174"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rpk-gG-LQD">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rpk-gG-LQD">
                                 <rect key="frame" x="0.0" y="0.0" width="151" height="174"/>
                             </imageView>
                         </subviews>
@@ -39,6 +39,11 @@
                     <constraint firstItem="P2e-MR-w4U" firstAttribute="top" secondItem="yG8-vT-yKG" secondAttribute="top" id="WLG-yh-Y09"/>
                     <constraint firstAttribute="bottom" secondItem="P2e-MR-w4U" secondAttribute="bottom" id="p3h-Nd-9Ai"/>
                 </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                        <integer key="value" value="15"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
             </collectionViewCellContentView>
             <size key="customSize" width="151" height="174"/>
             <connections>

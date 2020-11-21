@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+<<<<<<< HEAD
       "scale" : "1x",
       "idiom" : "universal",
       "filename" : "result3.png"
@@ -14,6 +15,21 @@
       "scale" : "3x",
       "idiom" : "universal",
       "filename" : "result3@3x.png"
+=======
+      "filename" : "result3.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "result3@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "scale" : "3x",
+      "filename" : "result3@3x.png",
+      "idiom" : "universal"
+>>>>>>> deb068dd0a0a72d774154864238bb97cd6aec0dd
     }
   ],
   "info" : {

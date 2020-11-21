@@ -36,6 +36,8 @@
 		F23CC34DEE1B6E251A39B3C2 /* Pods_MEMECHIN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3306ABC7CD7954250A7E2C4 /* Pods_MEMECHIN.framework */; };
 		F2A2984D256998B50000B457 /* MemeCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A2984C256998B50000B457 /* MemeCVCell.swift */; };
 		F2A2985225699B550000B457 /* MemeCVHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A2985125699B550000B457 /* MemeCVHeader.swift */; };
+		F2A298702569C4D30000B457 /* DetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A2986F2569C4D30000B457 /* DetailService.swift */; };
+		F2A298742569C9EF0000B457 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A298732569C9EF0000B457 /* Models.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +74,8 @@
 		C3306ABC7CD7954250A7E2C4 /* Pods_MEMECHIN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MEMECHIN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2A2984C256998B50000B457 /* MemeCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeCVCell.swift; sourceTree = "<group>"; };
 		F2A2985125699B550000B457 /* MemeCVHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeCVHeader.swift; sourceTree = "<group>"; };
+		F2A2986F2569C4D30000B457 /* DetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailService.swift; sourceTree = "<group>"; };
+		F2A298732569C9EF0000B457 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,9 +145,11 @@
 			isa = PBXGroup;
 			children = (
 				54813A182569502600FD7088 /* APIConstants.swift */,
+				F2A2986F2569C4D30000B457 /* DetailService.swift */,
 				06F46E812569AED40034842C /* Search.swift */,
 				06F46E842569B1B60034842C /* NetworkResult.swift */,
 				06BE10E02569C71D003844F2 /* SearchService.swift */,
+				F2A298732569C9EF0000B457 /* Models.swift */,
 			);
 			path = "Service File";
 			sourceTree = "<group>";
@@ -427,10 +433,12 @@
 				06F46E7A256999360034842C /* SearchCell.swift in Sources */,
 				F2A2984D256998B50000B457 /* MemeCVCell.swift in Sources */,
 				F2A2985225699B550000B457 /* MemeCVHeader.swift in Sources */,
+				F2A298742569C9EF0000B457 /* Models.swift in Sources */,
 				54813A1625694FEF00FD7088 /* SearchVC.swift in Sources */,
 				54813A35256993D700FD7088 /* BasicTopCell.swift in Sources */,
 				54813A31256993BE00FD7088 /* TodayMemeCell.swift in Sources */,
 				54813A402569AA6A00FD7088 /* Today.swift in Sources */,
+				F2A298702569C4D30000B457 /* DetailService.swift in Sources */,
 				54813A192569502600FD7088 /* APIConstants.swift in Sources */,
 				54813A472569AA7B00FD7088 /* BasicBot.swift in Sources */,
 				548139D6256948BC00FD7088 /* AppDelegate.swift in Sources */,

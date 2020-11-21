@@ -14,6 +14,6 @@ class MemeCVCell: UICollectionViewCell {
     
     //더미
     func setImage(imageName: String){
-        MemeImageView.image = UIImage(systemName: imageName)
+        MemeImageView.image = UIImage(named: imageName)
     }
 }

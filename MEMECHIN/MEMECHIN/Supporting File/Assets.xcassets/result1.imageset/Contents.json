@@ -7,6 +7,7 @@
     },
     {
       "scale" : "2x",
+<<<<<<< HEAD
       "idiom" : "universal",
       "filename" : "result1@2x.png"
     },
@@ -14,6 +15,15 @@
       "filename" : "result1@3x.png",
       "scale" : "3x",
       "idiom" : "universal"
+=======
+      "filename" : "result1@2x.png",
+      "idiom" : "universal"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "result1@3x.png",
+      "scale" : "3x"
+>>>>>>> deb068dd0a0a72d774154864238bb97cd6aec0dd
     }
   ],
   "info" : {

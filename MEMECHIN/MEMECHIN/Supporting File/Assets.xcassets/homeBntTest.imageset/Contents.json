@@ -6,14 +6,14 @@
       "scale" : "1x"
     },
     {
-      "filename" : "homeBntTest@2x.png",
+      "scale" : "2x",
       "idiom" : "universal",
-      "scale" : "2x"
+      "filename" : "homeBntTest@2x.png"
     },
     {
       "filename" : "homeBntTest@3x.png",
-      "idiom" : "universal",
-      "scale" : "3x"
+      "scale" : "3x",
+      "idiom" : "universal"
     }
   ],
   "info" : {

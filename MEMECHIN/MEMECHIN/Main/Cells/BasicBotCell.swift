@@ -11,11 +11,10 @@ class BasicBotCell: UICollectionViewCell {
     static let identifier = "BasicBotCell"
     
     @IBOutlet weak var basicBotImageView: UIImageView!
-    @IBOutlet weak var basicBotHashTagLabel: UILabel!
     
-    func setBTopData(basicBotImageName: String, basicBotCategory: String){
+    func setBBotData(basicBotImageName: String, basicBotCategory: String){
         self.basicBotImageView.image = UIImage(named: basicBotImageName)
-        self.basicBotHashTagLabel.text = basicBotCategory
+
     }
     
     static func nib() -> UINib {
