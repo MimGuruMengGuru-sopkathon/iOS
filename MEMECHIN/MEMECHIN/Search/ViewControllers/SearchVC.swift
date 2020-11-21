@@ -20,7 +20,7 @@ class SearchVC: UIViewController {
     }
     
     func setPlaceHolder() {
-        searchTextField.placeholder = "# 밈 키워드를 검색해보세요e"
+        searchTextField.placeholder = "# 밈 키워드를 검색해보세요gg"
         searchTextField.borderStyle = .roundedRect
         searchTextField.layer.cornerRadius = 3.5
     }
