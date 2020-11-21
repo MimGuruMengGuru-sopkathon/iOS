@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,15 @@
 		54813A1325694FE100FD7088 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54813A1225694FE100FD7088 /* MainVC.swift */; };
 		54813A1625694FEF00FD7088 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54813A1525694FEF00FD7088 /* SearchVC.swift */; };
 		54813A192569502600FD7088 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54813A182569502600FD7088 /* APIConstants.swift */; };
+		54813A232569930000FD7088 /* TodayMemeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54813A222569930000FD7088 /* TodayMemeCell.xib */; };
+		54813A2D2569936F00FD7088 /* BasicTopCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54813A2C2569936F00FD7088 /* BasicTopCell.xib */; };
+		54813A31256993BE00FD7088 /* TodayMemeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54813A30256993BE00FD7088 /* TodayMemeCell.swift */; };
+		54813A35256993D700FD7088 /* BasicTopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54813A34256993D700FD7088 /* BasicTopCell.swift */; };
+		54813A3A2569A31800FD7088 /* BasicBotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54813A382569A31800FD7088 /* BasicBotCell.swift */; };
+		54813A3B2569A31800FD7088 /* BasicBotCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54813A392569A31800FD7088 /* BasicBotCell.xib */; };
+		54813A402569AA6A00FD7088 /* Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54813A3F2569AA6A00FD7088 /* Today.swift */; };
+		54813A442569AA7400FD7088 /* BasicTop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54813A432569AA7400FD7088 /* BasicTop.swift */; };
+		54813A472569AA7B00FD7088 /* BasicBot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54813A462569AA7B00FD7088 /* BasicBot.swift */; };
 		F23CC34DEE1B6E251A39B3C2 /* Pods_MEMECHIN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3306ABC7CD7954250A7E2C4 /* Pods_MEMECHIN.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +48,15 @@
 		54813A1225694FE100FD7088 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		54813A1525694FEF00FD7088 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		54813A182569502600FD7088 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		54813A222569930000FD7088 /* TodayMemeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodayMemeCell.xib; sourceTree = "<group>"; };
+		54813A2C2569936F00FD7088 /* BasicTopCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicTopCell.xib; sourceTree = "<group>"; };
+		54813A30256993BE00FD7088 /* TodayMemeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayMemeCell.swift; sourceTree = "<group>"; };
+		54813A34256993D700FD7088 /* BasicTopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTopCell.swift; sourceTree = "<group>"; };
+		54813A382569A31800FD7088 /* BasicBotCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicBotCell.swift; sourceTree = "<group>"; };
+		54813A392569A31800FD7088 /* BasicBotCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicBotCell.xib; sourceTree = "<group>"; };
+		54813A3F2569AA6A00FD7088 /* Today.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Today.swift; sourceTree = "<group>"; };
+		54813A432569AA7400FD7088 /* BasicTop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTop.swift; sourceTree = "<group>"; };
+		54813A462569AA7B00FD7088 /* BasicBot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicBot.swift; sourceTree = "<group>"; };
 		8BAC4D42209FD923A8DA0C06 /* Pods-MEMECHIN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEMECHIN.debug.xcconfig"; path = "Target Support Files/Pods-MEMECHIN/Pods-MEMECHIN.debug.xcconfig"; sourceTree = "<group>"; };
 		BE53AAEC768756D7559D4286 /* Pods-MEMECHIN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEMECHIN.release.xcconfig"; path = "Target Support Files/Pods-MEMECHIN/Pods-MEMECHIN.release.xcconfig"; sourceTree = "<group>"; };
 		C3306ABC7CD7954250A7E2C4 /* Pods_MEMECHIN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MEMECHIN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,6 +128,7 @@
 		548139EC256949BD00FD7088 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				54813A21256992D900FD7088 /* Cells */,
 				548139F725694AB200FD7088 /* ViewControllers */,
 				548139F625694AA900FD7088 /* Storyboards */,
 			);
@@ -177,6 +196,7 @@
 		548139F725694AB200FD7088 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				54813A3E2569AA5900FD7088 /* Model */,
 				54813A1225694FE100FD7088 /* MainVC.swift */,
 			);
 			path = ViewControllers;
@@ -207,6 +227,29 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		54813A21256992D900FD7088 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				54813A222569930000FD7088 /* TodayMemeCell.xib */,
+				54813A30256993BE00FD7088 /* TodayMemeCell.swift */,
+				54813A34256993D700FD7088 /* BasicTopCell.swift */,
+				54813A382569A31800FD7088 /* BasicBotCell.swift */,
+				54813A392569A31800FD7088 /* BasicBotCell.xib */,
+				54813A2C2569936F00FD7088 /* BasicTopCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		54813A3E2569AA5900FD7088 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				54813A3F2569AA6A00FD7088 /* Today.swift */,
+				54813A432569AA7400FD7088 /* BasicTop.swift */,
+				54813A462569AA7B00FD7088 /* BasicBot.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		8CE42CD9EFB2171D57511ADD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,7 +264,6 @@
 				8BAC4D42209FD923A8DA0C06 /* Pods-MEMECHIN.debug.xcconfig */,
 				BE53AAEC768756D7559D4286 /* Pods-MEMECHIN.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -284,10 +326,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54813A2D2569936F00FD7088 /* BasicTopCell.xib in Resources */,
 				548139E2256948BE00FD7088 /* LaunchScreen.storyboard in Resources */,
+				54813A3B2569A31800FD7088 /* BasicBotCell.xib in Resources */,
 				548139DF256948BE00FD7088 /* Assets.xcassets in Resources */,
 				548139FB25694B0600FD7088 /* Intro.storyboard in Resources */,
 				54813A0F25694FD500FD7088 /* Main.storyboard in Resources */,
+				54813A232569930000FD7088 /* TodayMemeCell.xib in Resources */,
 				54813A0925694FBD00FD7088 /* Detail.storyboard in Resources */,
 				54813A0C25694FC800FD7088 /* Search.storyboard in Resources */,
 			);
@@ -343,9 +388,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				54813A1625694FEF00FD7088 /* SearchVC.swift in Sources */,
+				54813A35256993D700FD7088 /* BasicTopCell.swift in Sources */,
+				54813A31256993BE00FD7088 /* TodayMemeCell.swift in Sources */,
+				54813A402569AA6A00FD7088 /* Today.swift in Sources */,
 				54813A192569502600FD7088 /* APIConstants.swift in Sources */,
+				54813A472569AA7B00FD7088 /* BasicBot.swift in Sources */,
 				548139D6256948BC00FD7088 /* AppDelegate.swift in Sources */,
+				54813A442569AA7400FD7088 /* BasicTop.swift in Sources */,
 				54813A1325694FE100FD7088 /* MainVC.swift in Sources */,
+				54813A3A2569A31800FD7088 /* BasicBotCell.swift in Sources */,
 				54813A0525694FAF00FD7088 /* DetailVC.swift in Sources */,
 				548139D8256948BC00FD7088 /* SceneDelegate.swift in Sources */,
 				54813A0125694F9A00FD7088 /* IntroVC.swift in Sources */,
