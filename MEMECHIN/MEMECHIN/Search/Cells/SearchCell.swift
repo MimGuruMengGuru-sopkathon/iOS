@@ -11,6 +11,7 @@ class SearchCell: UICollectionViewCell {
     static let identifier = "SearchCell"
     
     @IBOutlet weak var searchImage: UIImageView!
+    @IBOutlet weak var go: UIButton!
     
     func setImg(){
         searchImage.layer.cornerRadius = 7.5
