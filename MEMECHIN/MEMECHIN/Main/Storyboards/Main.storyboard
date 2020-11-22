@@ -12,7 +12,7 @@
         <!--MainVC-->
         <scene sceneID="gGG-Wz-Rfv">
             <objects>
-                <viewController id="cg2-ab-dZV" customClass="MainVC" customModule="MEMECHIN" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainVC" id="cg2-ab-dZV" customClass="MainVC" customModule="MEMECHIN" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="05f-8B-Pgn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

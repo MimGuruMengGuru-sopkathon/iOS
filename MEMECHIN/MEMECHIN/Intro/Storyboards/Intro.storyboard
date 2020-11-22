@@ -20,6 +20,9 @@
                                 <rect key="frame" x="20" y="737" width="343" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="btnChoose"/>
+                                <connections>
+                                    <action selector="asd:" destination="8tC-l4-hZ4" eventType="touchUpInside" id="8WS-fC-Yvr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hK-gL-B5s">
                                 <rect key="frame" x="16" y="185" width="165" height="165"/>

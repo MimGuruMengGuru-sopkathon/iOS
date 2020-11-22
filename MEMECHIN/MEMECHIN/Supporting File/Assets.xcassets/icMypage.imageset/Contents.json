@@ -1,19 +1,19 @@
 {
   "images" : [
     {
-      "filename" : "appLogo.png",
       "scale" : "1x",
-      "idiom" : "universal"
+      "idiom" : "universal",
+      "filename" : "icMypage.png"
     },
     {
-      "filename" : "appLogo@2x.png",
       "idiom" : "universal",
-      "scale" : "2x"
+      "scale" : "2x",
+      "filename" : "icMypage@2x.png"
     },
     {
       "scale" : "3x",
-      "filename" : "appLogo@3x.png",
-      "idiom" : "universal"
+      "idiom" : "universal",
+      "filename" : "icMypage@3x.png"
     }
   ],
   "info" : {

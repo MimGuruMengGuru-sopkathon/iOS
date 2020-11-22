@@ -40,4 +40,12 @@ class IntroVC: UIViewController {
     }
     */
 
+    @IBAction func asd(_ sender: Any) {
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        guard let nextView = storyboard.instantiateViewController(withIdentifier: "MainVC") as? MainVC else {
+            return}
+        nextView.modalPresentationStyle = .fullScreen
+
+        present(nextView, animated: true, completion: nil)
+    }
 }

@@ -124,16 +124,28 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_8233" translatesAutoresizingMaskIntoConstraints="NO" id="cQe-NT-6w4">
                                                     <rect key="frame" x="0.0" y="0.0" width="315" height="313"/>
                                                 </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ay-gb-t3f">
+                                                    <rect key="frame" x="0.0" y="0.0" width="315" height="313"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="goAction:" destination="VqO-Ul-GQH" eventType="touchUpInside" id="BgQ-qm-Lum"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="6Ay-gb-t3f" secondAttribute="trailing" id="7xk-H4-IAG"/>
                                                 <constraint firstAttribute="bottom" secondItem="cQe-NT-6w4" secondAttribute="bottom" id="Hfr-TI-biO"/>
                                                 <constraint firstItem="cQe-NT-6w4" firstAttribute="leading" secondItem="Oeh-67-PNc" secondAttribute="leading" id="Jc9-96-0jS"/>
+                                                <constraint firstItem="6Ay-gb-t3f" firstAttribute="top" secondItem="Oeh-67-PNc" secondAttribute="top" id="Wbm-iL-oxP"/>
                                                 <constraint firstAttribute="trailing" secondItem="cQe-NT-6w4" secondAttribute="trailing" id="gXE-gS-CyK"/>
+                                                <constraint firstAttribute="bottom" secondItem="6Ay-gb-t3f" secondAttribute="bottom" id="lUJ-Ts-N2G"/>
                                                 <constraint firstItem="cQe-NT-6w4" firstAttribute="top" secondItem="Oeh-67-PNc" secondAttribute="top" id="oVa-T8-ZTb"/>
+                                                <constraint firstItem="6Ay-gb-t3f" firstAttribute="leading" secondItem="Oeh-67-PNc" secondAttribute="leading" id="pJG-pC-7XQ"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="315" height="313"/>
                                         <connections>
+                                            <outlet property="go" destination="6Ay-gb-t3f" id="S8g-E4-dkc"/>
                                             <outlet property="searchImage" destination="cQe-NT-6w4" id="LBr-ge-Ey2"/>
                                         </connections>
                                     </collectionViewCell>
@@ -160,7 +172,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="profileLogo" destination="JXm-Vs-Geh" id="Z8V-mQ-q5d"/>
                         <outlet property="searchCollectionView" destination="Gdv-as-AZL" id="ooB-b7-eOf"/>
+                        <outlet property="searchLogo" destination="ulT-lo-AMv" id="PyL-b2-3OF"/>
                         <outlet property="searchTextField" destination="bGd-TS-mJY" id="H7Z-aQ-cXR"/>
                     </connections>
                 </viewController>

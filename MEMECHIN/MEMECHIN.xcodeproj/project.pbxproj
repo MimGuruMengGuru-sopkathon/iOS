@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		06BE10E12569C71D003844F2 /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BE10E02569C71D003844F2 /* SearchService.swift */; };
+		06BE10E62569E040003844F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06BE10E52569E040003844F2 /* Assets.xcassets */; };
 		06F46E7A256999360034842C /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F46E79256999360034842C /* SearchCell.swift */; };
 		06F46E822569AED40034842C /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F46E812569AED40034842C /* Search.swift */; };
 		06F46E852569B1B60034842C /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F46E842569B1B60034842C /* NetworkResult.swift */; };
 		548139D6256948BC00FD7088 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548139D5256948BC00FD7088 /* AppDelegate.swift */; };
 		548139D8256948BC00FD7088 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548139D7256948BC00FD7088 /* SceneDelegate.swift */; };
-		548139DF256948BE00FD7088 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 548139DE256948BE00FD7088 /* Assets.xcassets */; };
 		548139E2256948BE00FD7088 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 548139E0256948BE00FD7088 /* LaunchScreen.storyboard */; };
 		548139FB25694B0600FD7088 /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 548139FA25694B0600FD7088 /* Intro.storyboard */; };
 		54813A0125694F9A00FD7088 /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54813A0025694F9A00FD7088 /* IntroVC.swift */; };
@@ -42,13 +42,13 @@
 
 /* Begin PBXFileReference section */
 		06BE10E02569C71D003844F2 /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
+		06BE10E52569E040003844F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06F46E79256999360034842C /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		06F46E812569AED40034842C /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		06F46E842569B1B60034842C /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		548139D2256948BC00FD7088 /* MEMECHIN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MEMECHIN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		548139D5256948BC00FD7088 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		548139D7256948BC00FD7088 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		548139DE256948BE00FD7088 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		548139E1256948BE00FD7088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		548139E3256948BE00FD7088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		548139FA25694B0600FD7088 /* Intro.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
@@ -134,8 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				548139D5256948BC00FD7088 /* AppDelegate.swift */,
+				06BE10E52569E040003844F2 /* Assets.xcassets */,
 				548139D7256948BC00FD7088 /* SceneDelegate.swift */,
-				548139DE256948BE00FD7088 /* Assets.xcassets */,
 				548139E0256948BE00FD7088 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting File";
@@ -369,11 +369,11 @@
 				54813A2D2569936F00FD7088 /* BasicTopCell.xib in Resources */,
 				548139E2256948BE00FD7088 /* LaunchScreen.storyboard in Resources */,
 				54813A3B2569A31800FD7088 /* BasicBotCell.xib in Resources */,
-				548139DF256948BE00FD7088 /* Assets.xcassets in Resources */,
 				548139FB25694B0600FD7088 /* Intro.storyboard in Resources */,
 				54813A0F25694FD500FD7088 /* Main.storyboard in Resources */,
 				54813A232569930000FD7088 /* TodayMemeCell.xib in Resources */,
 				54813A0925694FBD00FD7088 /* Detail.storyboard in Resources */,
+				06BE10E62569E040003844F2 /* Assets.xcassets in Resources */,
 				54813A0C25694FC800FD7088 /* Search.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
