@@ -39,14 +39,13 @@ class MainVC: UIViewController {
     }
     
     @IBAction func touchUpSearch(_ sender: Any) {
+        let storyboard: UIStoryboard = UIStoryboard(name: "Search", bundle: nil)
+        guard let dvc = storyboard.instantiateViewController(withIdentifier: "SearchVC") as? SearchVC else {
+            return}
+        dvc.modalPresentationStyle = .fullScreen
+
+        present(dvc, animated: true, completion: nil)
         
-        let board = UIStoryboard(name: "Search", bundle: nil)
-        
-        guard let dvc = board.instantiateViewController(withIdentifier: "SearchVC") as? SearchVC else {
-            return
-        }
-        
-        self.present(dvc, animated: true)
     }
     //MARK: - Data Setting
     func setToday() {

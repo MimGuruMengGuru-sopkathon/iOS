@@ -1,35 +1,19 @@
 {
   "images" : [
     {
-<<<<<<< HEAD
+      "filename" : "appLogo.png",
       "scale" : "1x",
-      "idiom" : "universal",
-      "filename" : "appLogo.png"
+      "idiom" : "universal"
     },
     {
+      "filename" : "appLogo@2x.png",
       "idiom" : "universal",
-      "scale" : "2x",
-      "filename" : "appLogo@2x.png"
+      "scale" : "2x"
     },
     {
       "scale" : "3x",
       "filename" : "appLogo@3x.png",
       "idiom" : "universal"
-=======
-      "idiom" : "universal",
-      "filename" : "appLogo.png",
-      "scale" : "1x"
-    },
-    {
-      "scale" : "2x",
-      "filename" : "appLogo@2x.png",
-      "idiom" : "universal"
-    },
-    {
-      "idiom" : "universal",
-      "scale" : "3x",
-      "filename" : "appLogo@3x.png"
->>>>>>> deb068dd0a0a72d774154864238bb97cd6aec0dd
     }
   ],
   "info" : {
